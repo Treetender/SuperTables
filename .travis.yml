@@ -14,12 +14,11 @@ cache:
     - node_modules
 
 install:
-  - npm install -g yarn
   - npm install -g @angular/cli
 
 script:
-  - yarn lint
-  - yarn build --base-href https://treetender.github.io/SuperTables/
+  - ng lint
+  - ng build --base-href https://treetender.github.io/SuperTables/
 deploy:
   provider: pages
   skip_cleanup: true
