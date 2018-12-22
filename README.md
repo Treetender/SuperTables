@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
 
+## So What is this?
+I want to really play around with autmated CI builds and to experiment with streaming large sets of data to datatables asynchronously.
+
+This project is hosted in [Github Pages]() and will be updated every time a pull request is merged into master.  If the unit tests fail, or if the code is invalid, the build will fail.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
