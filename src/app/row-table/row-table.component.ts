@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator, MatSort } from '@angular/material';
-import { RowTableDataSource } from './row-table-datasource';
+
 import { RowService } from '../row.service';
 import { Observable } from 'rxjs';
 import { Row } from '../row';

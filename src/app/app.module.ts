@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RowTableComponent } from './row-table/row-table.component';
 import { MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
@@ -18,7 +19,7 @@ import { MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/mate
     BrowserAnimationsModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
