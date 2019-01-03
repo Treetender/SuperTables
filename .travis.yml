@@ -3,6 +3,8 @@ language: node_js
 node_js:
   - "9"
 dist: trusty
+addons:
+        chrome: stable
 sudo: false
 
 branches:
@@ -20,6 +22,7 @@ install:
 script:
   - ng lint
   - ng build --base-href https://treetender.github.io/SuperTables/
+  - npm test-headless
 deploy:
   provider: pages
   skip_cleanup: true
