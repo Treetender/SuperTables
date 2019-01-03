@@ -22,7 +22,7 @@ script:
   - npm run lint
   - npm run build -- --base-href https://treetender.github.io/SuperTables/
   - npm run test -- --watch=false --browsers=ChromeHeadless --progress=false
-  - npm run e2e -- --protractor-config=./e2e/protractor.conf.js
+  - npm run e2e 
 deploy:
   provider: pages
   skip_cleanup: true
