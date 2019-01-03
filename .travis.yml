@@ -3,6 +3,8 @@ language: node_js
 node_js:
   - "9"
 dist: trusty
+addons:
+        chrome: stable
 sudo: false
 
 branches:
@@ -14,12 +16,13 @@ cache:
     - node_modules
 
 install:
-  - npm install -g @angular/cli
   - npm install
 
 script:
-  - ng lint
-  - ng build --base-href https://treetender.github.io/SuperTables/
+  - npm run lint
+  - npm run build -- --base-href https://treetender.github.io/SuperTables/
+  - npm run test -- --watch=false --browsers=ChromeHeadless --progress=false
+  - npm run e2e 
 deploy:
   provider: pages
   skip_cleanup: true
